@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Hiring Chatbot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <ul class="navbar-items flexbox-col">
+                <li class="navbar-logo flexbox-left">
+                    <a class="navbar-item-inner flexbox">
+                        <img class="logo" src="bizlance_logo-removebg-preview.png" style="height: 55px;">
+                    </a>
+                </li>
+                <li class="navbar-item flexbox-left">
+                    <a class="navbar-item-inner flexbox-left">
+                        <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </div>
+                        <span class="btn" id="redirect-btn2">Find your Freelancer!</span>
+                    </a>
+                </li>
+                <li class="navbar-item flexbox-left">
+                    <a class="navbar-item-inner flexbox-left">
+                        <div class="navbar-item-inner-icon-wrapper flexbox">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </div>
+                        <span class="btn" id="redirect-btn1">Sign up</span>
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Hire Top Freelancers Instantly!</h2>
+                <p>Connect with skilled freelancers in seconds. Just ask our chatbot and get details instantly.</p>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2 class="main-heading">What We Offer</h2>
+        </section>
+        <section class="features-section">
+            <div class="feature-grid"></div>
+            <div class="feature-box">
+                <img src="instant_support-removebg-preview.png" alt="Chat Support">
+                <h3>Instant Support</h3>
+                <p>Get instant responses from our chatbot tailored to your freelancing needs.</p>
+            </div>
+            <div class="feature-box">
+                <img src="freelancer-removebg-preview.png" alt="Top Freelancers">
+                <h3>Top Talent</h3>
+                <p>Our curated list includes the best freelancers from all over the world.</p>
+            </div>
+            <div class="feature-box">
+                <img src="easy_conversations-removebg-preview.png" alt="Easy Conversations">
+                <h3>Simple Conversations</h3>
+                <p>Engage in a smooth chat experience with a user-friendly interface.</p>
+            </div>
+            </div>
+        </section>
+
+        <section class="chat-section" id="chat-section">
+            <h2>Start Chatting</h2>
+            <div class="chat-window" id="chat-window">
+                <div class="chat-log" id="chat-log"></div>
+                <div class="input-section">
+                    <input type="text" id="chat-input" placeholder="Ask me for a freelancer...">
+                    <button id="send-btn">Send</button>
+                </div>
+                <button class="clear-button" id="clear-chat-btn">Clear Chat</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

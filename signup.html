@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer Sign-Up</title>
+    <style>
+        @font-face {
+            font-family: Europa;
+            src: url("EuropaGroteskSH-Med.otf");
+        }
+
+        @font-face {
+            font-family: Game;
+            src: url("PIxelGameFont.ttf");
+        }
+
+        body {
+            font-family: Europa;
+            margin: 0;
+            padding: 20px;
+            background: rgb(88, 27, 27);
+            background: linear-gradient(90deg, rgba(88, 27, 27, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(82, 37, 37, 1) 100%);
+        }
+
+        .signup-container {
+            max-width: 500px;
+            margin: auto;
+            background-color: #08080857;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.468);
+            position: relative;
+            top: 20px;
+
+        }
+
+        h2 {
+            font-family: Montserrat;
+            text-align: center;
+
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 0px 10px 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: montserrat;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            background-color: #771508;
+            color: rgb(255, 141, 141);
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+
+        }
+
+        input[type="submit"]:hover {
+            background-color: #e73633;
+        }
+
+        label {
+            font-weight: bold;
+            letter-spacing: 2px;
+            color: rgb(184, 181, 181);
+            text-shadow: 0px 0px 8px rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="signup-container">
+        <h2>Freelancer Sign-Up</h2>
+        <form id="signupForm">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fullname" placeholder="Your full name" required>
+
+            <label for="place">Place</label>
+            <input type="text" id="place" name="place" placeholder="Your place" required>
+
+
+            <label for="skills">Your Skill</label>
+            <select id="skill" name="skill" required>
+                <option value="">Select your main skill</option>
+                <option value="web-development">Web Development</option>
+                <option value="graphic-designing">Graphic Designing</option>
+                <option value="content-writing">Content Writing</option>
+                <option value="marketing">Marketing</option>
+                <option value="data-analysis">Data Analysis</option>
+            </select>
+
+            <label for="contact">Contact</label>
+            <input type="text" id="contact" name="contact" placeholder="Your Contact" required>
+
+            <label for="instagram">Instagram</label>
+            <input type="text" id="instagram" name="instagram" placeholder="Your Username" required>
+
+            <label for="portfolio">Portfolio (Optional)</label>
+            <input type="text" id="portfolio" name="portfolio" placeholder="Link to your portfolio (if any)">
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </div>
+
+    <!-- Link to script.js -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
